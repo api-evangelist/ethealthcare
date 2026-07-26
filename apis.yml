@@ -1,7 +1,25 @@
 aid: ethealthcare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ethealthcare.png
 name: ethealthcare
-description: ethealthcare is a company surfaced as a portfolio company of qiming and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ET Healthcare (ethealthcare.com.cn) is an in-vitro diagnostics (IVD) company founded in
+  2008 and headquartered in Palo Alto, California, with operations in China. It develops immunodiagnostic
+  systems built on its proprietary "lab-on-a-tip" technology, delivering central-lab-grade immunoassay
+  performance in a near-patient setting. Its flagship Pylon platform (Pylon 3D automated immunoassay
+  analyzers plus single-use Pylon Test Strips) runs cardiac, inflammation, fertility, infectious-disease,
+  and tumor assays on whole blood, plasma, and serum. Backed by Qiming Venture Partners and other
+  investors, ET Healthcare is a medical-device / clinical-laboratory instrument maker and does not
+  currently publish a public developer API surface.
 url: https://raw.githubusercontent.com/api-evangelist/ethealthcare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Diagnostics
+- Medical Devices
+- In Vitro Diagnostics
+- Immunoassay
+- Life Sciences
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ethealthcare-domain-security.yml
 - type: Website
   url: https://ethealthcare.com.cn
+- type: Support
+  url: https://www.ethealthcare.com.cn/en/contact-us
+- type: PrivacyPolicy
+  url: https://www.ethealthcare.com.cn/en/privacy-policy
+- type: TermsOfService
+  url: https://www.ethealthcare.com.cn/en/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
